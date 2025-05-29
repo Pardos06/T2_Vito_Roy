@@ -1,0 +1,25 @@
+/* Transición de deslizamiento */
+.page-slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%); /* Empuja la página fuera de la pantalla */
+    transition: transform 0.5s ease;
+}
+
+    .page-slide.page-in-left {
+        transform: translateX(0); /* Desliza desde la izquierda */
+    }
+
+    .page-slide.page-in-right {
+        transform: translateX(0); /* Desliza desde la derecha */
+    }
+
+    .page-slide.page-out-left {
+        transform: translateX(-100%); /* Desliza hacia la izquierda */
+    }
+
+    .page-slide.page-out-right {
+        transform: translateX(100%); /* Desliza hacia la derecha */
+    }
